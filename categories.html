@@ -5,8 +5,35 @@
     <title>Categories</title>
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel='stylesheet' href='css/styleCategories.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="shortcut icon" href="img/icon.jpg">
+
+
 </head>
 <body>
+<header>
+    <nav class='navbar'>
+        <div class='logo' data-key='siteName'>Asayra Aluminum Trading</div>
+        <ul class='nav-links'>
+            <li><a href='index.html' data-key='home'>Home</a></li>
+            <li><a href='categories.html' data-key='cat'>Categories</a></li>
+            <li><a href='products.html' data-key='products'>Products</a></li>
+            <li><a href='cart.html' id='cart-link' data-key='cart'>Cart <span id='cart-count' class='cart-count'>0</span></a></li>
+            <li><a href='aboutUs.html' data-key="aboutNav">About us </a></li>
+        </ul>
+        <div class="language-dropdown">
+            <div class="lang-btn">
+                <i class="fas fa-globe"></i>
+            </div>
+
+            <div class="lang-menu">
+                <button class="lang-option" data-change="en">English</button>
+                <button class="lang-option" data-change="ar">العربية</button>
+            </div>
+        </div>
+
+    </nav>
+</header>
 <section class="categories-section">
     <h2>All Categories</h2>
 
@@ -149,6 +176,7 @@
 
     </div>
 </section>
-
+<script src='js/app.js'></script>
+<script src='js/cart.js'></script>
 </body>
 </html>

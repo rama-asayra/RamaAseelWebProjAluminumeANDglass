@@ -201,6 +201,7 @@
           "year_2020": "2020",
           "hist_2020": "Leadership growth & international presence.",
 
+          "cat":"CATEGORIES",
 
 
 
@@ -401,6 +402,8 @@
 
           "year_2020": "2020",
           "hist_2020": "نمو القيادة والتواجد الدولي.",
+
+          "cat":"الفئات",
 
 
 
