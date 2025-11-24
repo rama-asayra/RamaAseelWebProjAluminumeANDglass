@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Products - Asayra Aluminum Trading</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='css/style.css'>
+    <link rel="shortcut icon" href="img/icon.jpg">
+
+</head>
+<body>
+  <header>
+    <nav class='navbar'>
+      <div class='logo' data-key='siteName'>Asayra Aluminum Trading</div>
+      <ul class='nav-links'>
+        <li><a href='index.html' data-key='home'>Home</a></li>
+        <li><a href='products.html' class='active' data-key='products'>Products</a></li>
+        <li><a href='cart.html' id='cart-link' data-key='cart'>Cart <span id='cart-count' class='cart-count'>0</span></a></li>
+          <li><a href='aboutUs.html' data-key="aboutNav">About us </a></li>
+      </ul>
+<!--      <div class='language-switch'>-->
+<!--        <button id='lang-en'>EN</button>-->
+<!--        <button id='lang-ar'>AR</button>-->
+<!--      </div>-->
+<!--        <div class="language-dropdown">-->
+<!--            <div class="lang-btn">🌐</div>-->
+
+<!--            <div class="lang-menu">-->
+<!--                <button class="lang-option" data-change="en">English</button>-->
+<!--                <button class="lang-option" data-change="ar">العربية</button>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="language-dropdown">
+            <div class="lang-btn">
+                <i class="fas fa-globe"></i>
+            </div>
+
+            <div class="lang-menu">
+                <button class="lang-option" data-change="en">English</button>
+                <button class="lang-option" data-change="ar">العربية</button>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <section class='filter-bar'>
+    <input type='text' id='search' placeholder='Search...' data-key='searchPlaceholder'>
+    <select id='category-filter'>
+      <option value='all' data-key='allCategories'>All Categories</option>
+      <option value='brackets' data-key='catBrackets'>Brackets</option>
+      <option value='rods' data-key='catRods'>Rods</option>
+      <option value='sheets' data-key='catSheets'>Sheets</option>
+      <option value='profiles' data-key='catProfiles'>Profiles</option>
+      <option value='tubes' data-key='catTubes'>Tubes</option>
+      <option value='accessories' data-key='catAccessories'>Accessories</option>
+    </select>
+  </section>
+
+  <section class='products'>
+    <h2 data-key='ourProducts'>Our Products</h2>
+    <div class='product-grid'>
+      <div class='product-card' data-category='brackets' data-id='1'>
+        <img src='img/brackets.svg' alt='brackets product image'>
+        <h3 data-key='product1'>Aluminum Product 1</h3>
+        <p class='desc' data-key='desc1'>Description for Aluminum Product 1.</p>
+        <p class='price'>$ 11.74</p>
+        <button class='add-to-cart' data-price='11.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='1' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='rods' data-id='2'>
+        <img src='img/rods.svg' alt='rods product image'>
+        <h3 data-key='product2'>Aluminum Product 2</h3>
+        <p class='desc' data-key='desc2'>Description for Aluminum Product 2.</p>
+        <p class='price'>$ 13.49</p>
+        <button class='add-to-cart' data-price='13.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='2' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='sheets' data-id='3'>
+        <img src='img/sheets.svg' alt='sheets product image'>
+        <h3 data-key='product3'>Aluminum Product 3</h3>
+        <p class='desc' data-key='desc3'>Description for Aluminum Product 3.</p>
+        <p class='price'>$ 15.24</p>
+        <button class='add-to-cart' data-price='15.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='3' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='profiles' data-id='4'>
+        <img src='img/profiles.svg' alt='profiles product image'>
+        <h3 data-key='product4'>Aluminum Product 4</h3>
+        <p class='desc' data-key='desc4'>Description for Aluminum Product 4.</p>
+        <p class='price'>$ 16.99</p>
+        <button class='add-to-cart' data-price='16.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='4' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='tubes' data-id='5'>
+        <img src='img/tubes.svg' alt='tubes product image'>
+        <h3 data-key='product5'>Aluminum Product 5</h3>
+        <p class='desc' data-key='desc5'>Description for Aluminum Product 5.</p>
+        <p class='price'>$ 18.74</p>
+        <button class='add-to-cart' data-price='18.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='5' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='accessories' data-id='6'>
+        <img src='img/accessories.svg' alt='accessories product image'>
+        <h3 data-key='product6'>Aluminum Product 6</h3>
+        <p class='desc' data-key='desc6'>Description for Aluminum Product 6.</p>
+        <p class='price'>$ 20.49</p>
+        <button class='add-to-cart' data-price='20.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='6' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='brackets' data-id='7'>
+        <img src='img/brackets.svg' alt='brackets product image'>
+        <h3 data-key='product7'>Aluminum Product 7</h3>
+        <p class='desc' data-key='desc7'>Description for Aluminum Product 7.</p>
+        <p class='price'>$ 22.24</p>
+        <button class='add-to-cart' data-price='22.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='7' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='rods' data-id='8'>
+        <img src='img/rods.svg' alt='rods product image'>
+        <h3 data-key='product8'>Aluminum Product 8</h3>
+        <p class='desc' data-key='desc8'>Description for Aluminum Product 8.</p>
+        <p class='price'>$ 23.99</p>
+        <button class='add-to-cart' data-price='23.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='8' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='sheets' data-id='9'>
+        <img src='img/sheets.svg' alt='sheets product image'>
+        <h3 data-key='product9'>Aluminum Product 9</h3>
+        <p class='desc' data-key='desc9'>Description for Aluminum Product 9.</p>
+        <p class='price'>$ 25.74</p>
+        <button class='add-to-cart' data-price='25.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='9' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='profiles' data-id='10'>
+        <img src='img/profiles.svg' alt='profiles product image'>
+        <h3 data-key='product10'>Aluminum Product 10</h3>
+        <p class='desc' data-key='desc10'>Description for Aluminum Product 10.</p>
+        <p class='price'>$ 27.49</p>
+        <button class='add-to-cart' data-price='27.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='10' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='tubes' data-id='11'>
+        <img src='img/tubes.svg' alt='tubes product image'>
+        <h3 data-key='product11'>Aluminum Product 11</h3>
+        <p class='desc' data-key='desc11'>Description for Aluminum Product 11.</p>
+        <p class='price'>$ 29.24</p>
+        <button class='add-to-cart' data-price='29.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='11' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='accessories' data-id='12'>
+        <img src='img/accessories.svg' alt='accessories product image'>
+        <h3 data-key='product12'>Aluminum Product 12</h3>
+        <p class='desc' data-key='desc12'>Description for Aluminum Product 12.</p>
+        <p class='price'>$ 30.99</p>
+        <button class='add-to-cart' data-price='30.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='12' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='brackets' data-id='13'>
+        <img src='img/brackets.svg' alt='brackets product image'>
+        <h3 data-key='product13'>Aluminum Product 13</h3>
+        <p class='desc' data-key='desc13'>Description for Aluminum Product 13.</p>
+        <p class='price'>$ 32.74</p>
+        <button class='add-to-cart' data-price='32.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='13' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='rods' data-id='14'>
+        <img src='img/rods.svg' alt='rods product image'>
+        <h3 data-key='product14'>Aluminum Product 14</h3>
+        <p class='desc' data-key='desc14'>Description for Aluminum Product 14.</p>
+        <p class='price'>$ 34.49</p>
+        <button class='add-to-cart' data-price='34.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='14' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='sheets' data-id='15'>
+        <img src='img/sheets.svg' alt='sheets product image'>
+        <h3 data-key='product15'>Aluminum Product 15</h3>
+        <p class='desc' data-key='desc15'>Description for Aluminum Product 15.</p>
+        <p class='price'>$ 36.24</p>
+        <button class='add-to-cart' data-price='36.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='15' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='profiles' data-id='16'>
+        <img src='img/profiles.svg' alt='profiles product image'>
+        <h3 data-key='product16'>Aluminum Product 16</h3>
+        <p class='desc' data-key='desc16'>Description for Aluminum Product 16.</p>
+        <p class='price'>$ 37.99</p>
+        <button class='add-to-cart' data-price='37.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='16' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='tubes' data-id='17'>
+        <img src='img/tubes.svg' alt='tubes product image'>
+        <h3 data-key='product17'>Aluminum Product 17</h3>
+        <p class='desc' data-key='desc17'>Description for Aluminum Product 17.</p>
+        <p class='price'>$ 39.74</p>
+        <button class='add-to-cart' data-price='39.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='17' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='accessories' data-id='18'>
+        <img src='img/accessories.svg' alt='accessories product image'>
+        <h3 data-key='product18'>Aluminum Product 18</h3>
+        <p class='desc' data-key='desc18'>Description for Aluminum Product 18.</p>
+        <p class='price'>$ 41.49</p>
+        <button class='add-to-cart' data-price='41.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='18' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='brackets' data-id='19'>
+        <img src='img/brackets.svg' alt='brackets product image'>
+        <h3 data-key='product19'>Aluminum Product 19</h3>
+        <p class='desc' data-key='desc19'>Description for Aluminum Product 19.</p>
+        <p class='price'>$ 43.24</p>
+        <button class='add-to-cart' data-price='43.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='19' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='rods' data-id='20'>
+        <img src='img/rods.svg' alt='rods product image'>
+        <h3 data-key='product20'>Aluminum Product 20</h3>
+        <p class='desc' data-key='desc20'>Description for Aluminum Product 20.</p>
+        <p class='price'>$ 44.99</p>
+        <button class='add-to-cart' data-price='44.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='20' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='sheets' data-id='21'>
+        <img src='img/sheets.svg' alt='sheets product image'>
+        <h3 data-key='product21'>Aluminum Product 21</h3>
+        <p class='desc' data-key='desc21'>Description for Aluminum Product 21.</p>
+        <p class='price'>$ 46.74</p>
+        <button class='add-to-cart' data-price='46.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='21' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='profiles' data-id='22'>
+        <img src='img/profiles.svg' alt='profiles product image'>
+        <h3 data-key='product22'>Aluminum Product 22</h3>
+        <p class='desc' data-key='desc22'>Description for Aluminum Product 22.</p>
+        <p class='price'>$ 48.49</p>
+        <button class='add-to-cart' data-price='48.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='22' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='tubes' data-id='23'>
+        <img src='img/tubes.svg' alt='tubes product image'>
+        <h3 data-key='product23'>Aluminum Product 23</h3>
+        <p class='desc' data-key='desc23'>Description for Aluminum Product 23.</p>
+        <p class='price'>$ 50.24</p>
+        <button class='add-to-cart' data-price='50.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='23' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='accessories' data-id='24'>
+        <img src='img/accessories.svg' alt='accessories product image'>
+        <h3 data-key='product24'>Aluminum Product 24</h3>
+        <p class='desc' data-key='desc24'>Description for Aluminum Product 24.</p>
+        <p class='price'>$ 51.99</p>
+        <button class='add-to-cart' data-price='51.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='24' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='brackets' data-id='25'>
+        <img src='img/brackets.svg' alt='brackets product image'>
+        <h3 data-key='product25'>Aluminum Product 25</h3>
+        <p class='desc' data-key='desc25'>Description for Aluminum Product 25.</p>
+        <p class='price'>$ 53.74</p>
+        <button class='add-to-cart' data-price='53.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='25' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='rods' data-id='26'>
+        <img src='img/rods.svg' alt='rods product image'>
+        <h3 data-key='product26'>Aluminum Product 26</h3>
+        <p class='desc' data-key='desc26'>Description for Aluminum Product 26.</p>
+        <p class='price'>$ 55.49</p>
+        <button class='add-to-cart' data-price='55.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='26' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='sheets' data-id='27'>
+        <img src='img/sheets.svg' alt='sheets product image'>
+        <h3 data-key='product27'>Aluminum Product 27</h3>
+        <p class='desc' data-key='desc27'>Description for Aluminum Product 27.</p>
+        <p class='price'>$ 57.24</p>
+        <button class='add-to-cart' data-price='57.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='27' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='profiles' data-id='28'>
+        <img src='img/profiles.svg' alt='profiles product image'>
+        <h3 data-key='product28'>Aluminum Product 28</h3>
+        <p class='desc' data-key='desc28'>Description for Aluminum Product 28.</p>
+        <p class='price'>$ 58.99</p>
+        <button class='add-to-cart' data-price='58.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='28' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='tubes' data-id='29'>
+        <img src='img/tubes.svg' alt='tubes product image'>
+        <h3 data-key='product29'>Aluminum Product 29</h3>
+        <p class='desc' data-key='desc29'>Description for Aluminum Product 29.</p>
+        <p class='price'>$ 60.74</p>
+        <button class='add-to-cart' data-price='60.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='29' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='accessories' data-id='30'>
+        <img src='img/accessories.svg' alt='accessories product image'>
+        <h3 data-key='product30'>Aluminum Product 30</h3>
+        <p class='desc' data-key='desc30'>Description for Aluminum Product 30.</p>
+        <p class='price'>$ 62.49</p>
+        <button class='add-to-cart' data-price='62.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='30' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='brackets' data-id='31'>
+        <img src='img/brackets.svg' alt='brackets product image'>
+        <h3 data-key='product31'>Aluminum Product 31</h3>
+        <p class='desc' data-key='desc31'>Description for Aluminum Product 31.</p>
+        <p class='price'>$ 64.24</p>
+        <button class='add-to-cart' data-price='64.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='31' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='rods' data-id='32'>
+        <img src='img/rods.svg' alt='rods product image'>
+        <h3 data-key='product32'>Aluminum Product 32</h3>
+        <p class='desc' data-key='desc32'>Description for Aluminum Product 32.</p>
+        <p class='price'>$ 65.99</p>
+        <button class='add-to-cart' data-price='65.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='32' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='sheets' data-id='33'>
+        <img src='img/sheets.svg' alt='sheets product image'>
+        <h3 data-key='product33'>Aluminum Product 33</h3>
+        <p class='desc' data-key='desc33'>Description for Aluminum Product 33.</p>
+        <p class='price'>$ 67.74</p>
+        <button class='add-to-cart' data-price='67.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='33' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='profiles' data-id='34'>
+        <img src='img/profiles.svg' alt='profiles product image'>
+        <h3 data-key='product34'>Aluminum Product 34</h3>
+        <p class='desc' data-key='desc34'>Description for Aluminum Product 34.</p>
+        <p class='price'>$ 69.49</p>
+        <button class='add-to-cart' data-price='69.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='34' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='tubes' data-id='35'>
+        <img src='img/tubes.svg' alt='tubes product image'>
+        <h3 data-key='product35'>Aluminum Product 35</h3>
+        <p class='desc' data-key='desc35'>Description for Aluminum Product 35.</p>
+        <p class='price'>$ 71.24</p>
+        <button class='add-to-cart' data-price='71.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='35' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='accessories' data-id='36'>
+        <img src='img/accessories.svg' alt='accessories product image'>
+        <h3 data-key='product36'>Aluminum Product 36</h3>
+        <p class='desc' data-key='desc36'>Description for Aluminum Product 36.</p>
+        <p class='price'>$ 72.99</p>
+        <button class='add-to-cart' data-price='72.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='36' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='brackets' data-id='37'>
+        <img src='img/brackets.svg' alt='brackets product image'>
+        <h3 data-key='product37'>Aluminum Product 37</h3>
+        <p class='desc' data-key='desc37'>Description for Aluminum Product 37.</p>
+        <p class='price'>$ 74.74</p>
+        <button class='add-to-cart' data-price='74.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='37' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='rods' data-id='38'>
+        <img src='img/rods.svg' alt='rods product image'>
+        <h3 data-key='product38'>Aluminum Product 38</h3>
+        <p class='desc' data-key='desc38'>Description for Aluminum Product 38.</p>
+        <p class='price'>$ 76.49</p>
+        <button class='add-to-cart' data-price='76.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='38' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='sheets' data-id='39'>
+        <img src='img/sheets.svg' alt='sheets product image'>
+        <h3 data-key='product39'>Aluminum Product 39</h3>
+        <p class='desc' data-key='desc39'>Description for Aluminum Product 39.</p>
+        <p class='price'>$ 78.24</p>
+        <button class='add-to-cart' data-price='78.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='39' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='profiles' data-id='40'>
+        <img src='img/profiles.svg' alt='profiles product image'>
+        <h3 data-key='product40'>Aluminum Product 40</h3>
+        <p class='desc' data-key='desc40'>Description for Aluminum Product 40.</p>
+        <p class='price'>$ 79.99</p>
+        <button class='add-to-cart' data-price='79.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='40' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='tubes' data-id='41'>
+        <img src='img/tubes.svg' alt='tubes product image'>
+        <h3 data-key='product41'>Aluminum Product 41</h3>
+        <p class='desc' data-key='desc41'>Description for Aluminum Product 41.</p>
+        <p class='price'>$ 81.74</p>
+        <button class='add-to-cart' data-price='81.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='41' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='accessories' data-id='42'>
+        <img src='img/accessories.svg' alt='accessories product image'>
+        <h3 data-key='product42'>Aluminum Product 42</h3>
+        <p class='desc' data-key='desc42'>Description for Aluminum Product 42.</p>
+        <p class='price'>$ 83.49</p>
+        <button class='add-to-cart' data-price='83.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='42' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='brackets' data-id='43'>
+        <img src='img/brackets.svg' alt='brackets product image'>
+        <h3 data-key='product43'>Aluminum Product 43</h3>
+        <p class='desc' data-key='desc43'>Description for Aluminum Product 43.</p>
+        <p class='price'>$ 85.24</p>
+        <button class='add-to-cart' data-price='85.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='43' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='rods' data-id='44'>
+        <img src='img/rods.svg' alt='rods product image'>
+        <h3 data-key='product44'>Aluminum Product 44</h3>
+        <p class='desc' data-key='desc44'>Description for Aluminum Product 44.</p>
+        <p class='price'>$ 86.99</p>
+        <button class='add-to-cart' data-price='86.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='44' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='sheets' data-id='45'>
+        <img src='img/sheets.svg' alt='sheets product image'>
+        <h3 data-key='product45'>Aluminum Product 45</h3>
+        <p class='desc' data-key='desc45'>Description for Aluminum Product 45.</p>
+        <p class='price'>$ 88.74</p>
+        <button class='add-to-cart' data-price='88.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='45' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='profiles' data-id='46'>
+        <img src='img/profiles.svg' alt='profiles product image'>
+        <h3 data-key='product46'>Aluminum Product 46</h3>
+        <p class='desc' data-key='desc46'>Description for Aluminum Product 46.</p>
+        <p class='price'>$ 90.49</p>
+        <button class='add-to-cart' data-price='90.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='46' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='tubes' data-id='47'>
+        <img src='img/tubes.svg' alt='tubes product image'>
+        <h3 data-key='product47'>Aluminum Product 47</h3>
+        <p class='desc' data-key='desc47'>Description for Aluminum Product 47.</p>
+        <p class='price'>$ 92.24</p>
+        <button class='add-to-cart' data-price='92.24' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='47' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='accessories' data-id='48'>
+        <img src='img/accessories.svg' alt='accessories product image'>
+        <h3 data-key='product48'>Aluminum Product 48</h3>
+        <p class='desc' data-key='desc48'>Description for Aluminum Product 48.</p>
+        <p class='price'>$ 93.99</p>
+        <button class='add-to-cart' data-price='93.99' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='48' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='brackets' data-id='49'>
+        <img src='img/brackets.svg' alt='brackets product image'>
+        <h3 data-key='product49'>Aluminum Product 49</h3>
+        <p class='desc' data-key='desc49'>Description for Aluminum Product 49.</p>
+        <p class='price'>$ 95.74</p>
+        <button class='add-to-cart' data-price='95.74' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='49' data-key='viewDetails'>View Details</button>
+      </div>
+      <div class='product-card' data-category='rods' data-id='50'>
+        <img src='img/rods.svg' alt='rods product image'>
+        <h3 data-key='product50'>Aluminum Product 50</h3>
+        <p class='desc' data-key='desc50'>Description for Aluminum Product 50.</p>
+        <p class='price'>$ 97.49</p>
+        <button class='add-to-cart' data-price='97.49' data-key='addToCart'>Add to Cart</button>
+        <button class='view-details' data-id='50' data-key='viewDetails'>View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <div id='product-modal' class='modal'>
+    <div class='modal-content'>
+      <span class='close' aria-label='Close'>&times;</span>
+      <img id='modal-img' src='' alt=''>
+      <h3 id='modal-name'></h3>
+      <p id='modal-desc'></p>
+      <p id='modal-price'></p>
+      <button id='modal-add' class='btn' data-key='addToCart'>Add to Cart</button>
+    </div>
+  </div>
+
+  <footer>
+    <p data-key='footer'>© 2025 Asayra Aluminum Trading. All rights reserved.</p>
+  </footer>
+  <script src='js/app.js'></script>
+  <script src='js/cart.js'></script>
+</body>
+</html>

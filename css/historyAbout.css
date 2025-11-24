@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#ffffff; /* ✅ خلفية بيضاء */
+    color:#222;
+}
+
+.history-section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.history-section h2{
+    font-size:40px;
+    margin-bottom:70px;
+    letter-spacing:2px;
+    color:#000000;
+}
+
+/* مسار القافلة */
+.history-track{
+    position:relative;
+    max-width:1300px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
+}
+
+/* الشريط الضوئي المتحرك */
+.history-track::before{
+    content:"";
+    position:absolute;
+    left:4%;
+    right:4%;
+    top:50%;
+    height:90px;
+    background:linear-gradient(90deg,#1A5276,#21618C,#2874A6,#2980B9,#0d47ff);
+    opacity:0.25;
+    filter:blur(20px);
+    border-radius:50px;
+    z-index:-1;
+    animation:glowMove 7s ease-in-out infinite alternate;
+}
+
+@keyframes glowMove{
+    0%{transform:translateY(-12px) scaleX(1);}
+    50%{transform:translateY(0) scaleX(1.05);}
+    100%{transform:translateY(12px) scaleX(1);}
+}
+
+/* كل عنصر */
+.history-node{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:160px;
+    animation: float 3s ease-in-out infinite alternate;
+}
+
+/* قافلة متعرجة ناعمة */
+.history-node:nth-child(odd){
+    transform:translateY(-30px);
+}
+
+.history-node:nth-child(even){
+    transform:translateY(30px);
+}
+
+/* حركة هادئة */
+@keyframes float{
+    from{transform:translateY(-5px);}
+    to{transform:translateY(8px);}
+}
+
+/* الدائرة المشعة */
+.circle{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background: radial-gradient(circle, #00e5ff, #1e88e5);
+    box-shadow:
+            0 0 0 10px rgba(30,136,229,0.2),
+            0 0 35px rgba(30,136,229,0.7),
+            0 0 70px rgba(0,229,255,0.5);
+    animation:pulse 2s infinite alternate;
+}
+
+/* نبض الإشعاع */
+@keyframes pulse{
+    0%{
+        box-shadow:
+                0 0 0 6px rgba(30,136,229,0.15),
+                0 0 20px #42a5ff;
+        transform:scale(1);
+    }
+    100%{
+        box-shadow:
+                0 0 0 16px rgba(30,136,229,0.1),
+                0 0 55px #00e5ff;
+        transform:scale(1.15);
+    }
+}
+
+/* السنة */
+.history-node h3{
+    margin-top:18px;
+    font-size:18px;
+    color:#1e88e5;
+}
+
+/* النص */
+.history-node p{
+    font-size:14px;
+    margin-top:8px;
+    max-width:180px;
+    line-height:1.5;
+    color:#444;
+}
+
+/* موبايل */
+@media(max-width:900px){
+    .history-track{
+        flex-direction:column;
+        gap:60px;
+       }
+}

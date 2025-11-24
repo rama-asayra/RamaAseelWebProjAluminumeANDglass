@@ -1,0 +1,139 @@
+:root{
+    --bg: #f6f7f8;
+    --text: #333;
+    --muted: #777;
+    --blue: #0058AC;
+    --green: #37b46a;
+    --card: #fff;
+    --radius: 14px;
+    --max-width: 1200px;
+    font-family: Inter, Arial, sans-serif;
+}
+
+.why-choose-us{
+    background: var(--bg);
+    padding: 70px 20px;
+}
+
+.container{
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left{
+    order: 1;
+}
+
+.hero-image{
+    /*width: 100%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    margin-right: 100px;*/
+    width: 680px;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+    display: block;
+    margin-left: 0;
+    margin-right: 40px;
+
+}
+
+.right{
+    order: 2;
+}
+
+.eyebrow{
+    color: var(--muted);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.title{
+    font-size: 32px;
+    margin: 0 0 15px;
+    color: var(--text);
+}
+
+.lead{
+    color: var(--muted);
+    font-size: 17px;
+    margin-bottom: 25px;
+    line-height: 1.65;
+}
+
+.features{
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.features li{
+    display: flex;
+    gap: 14px;
+}
+
+.check{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(55,180,106,0.12);
+    display: grid;
+    place-items: center;
+    color: var(--green);
+    font-size: 18px;
+    box-shadow: 0 0 0 4px rgba(55,180,106,0.05) inset;
+    flex-shrink: 0;
+}
+
+.small{
+    color: var(--muted);
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.cta{
+    display: inline-block;
+    padding: 14px 26px;
+    background:#0058AC;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.cta:hover,
+.cta:focus {
+    background-color: #FFFFFF;
+    color: #0058AC;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.18);
+}
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right {
+        flex: 1;
+        padding-right: 90px;
+    }
+
+    .features li {
+        justify-content: center;
+
+    }
+}
