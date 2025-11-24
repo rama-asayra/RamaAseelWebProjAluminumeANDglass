@@ -204,6 +204,44 @@
           "cat":"CATEGORIES",
 
 
+          "cat_title1": "All Categories",
+
+          "cat_windows_title1": "Windows",
+          "cat_windows_desc1": "High quality aluminum and glass windows.",
+
+          "cat_doors_title1": "Doors",
+          "cat_doors_desc1": "Modern door systems for all spaces.",
+
+          "cat_shower_title1": "Shower",
+          "cat_shower_desc1": "Elegant shower glass solutions.",
+
+          "cat_facades_title1": "Facades",
+          "cat_facades_desc1": "Curtain walls and building facades.",
+
+          "cat_profiles_title1": "Profiles",
+          "cat_profiles_desc1": "Advanced aluminum profile systems.",
+
+          "cat_sheets_title1": "Sheets",
+          "cat_sheets_desc1": "Durable aluminum sheets.",
+
+          "cat_railings_title1": "Railings",
+          "cat_railings_desc1": "Safe & stylish railing solutions.",
+
+          "cat_blinds_title1": "Blinds",
+          "cat_blinds_desc1": "Modern blinds systems.",
+
+          "cat_brackets_title": "Brackets",
+          "cat_brackets_desc": "Strong and durable aluminum brackets.",
+
+          "cat_rods_title": "Rods",
+          "cat_rods_desc": "High quality aluminum rods.",
+
+          "cat_tubes_title": "Tubes",
+          "cat_tubes_desc": "Precision aluminum tubes.",
+
+          "cat_accessories_title": "Accessories",
+          "cat_accessories_desc": "Complete accessories for aluminum systems."
+
 
 
       },
@@ -355,31 +393,31 @@
           "our_vision_title":"رؤيتنا",
           "our_vision_text":"أن نكون المزود الرائد المعترف به للابتكار والجودة ورضا العملاء، وبناء علاقات دائمة مع عملائنا.",
 
-          "cat_title": "بعض فئات منتجاتنا",
+          "cat_title1": "بعض فئات منتجاتنا",
 
-          "cat_windows_title": "نوافذ",
-          "cat_windows_desc": "نوافذ ألمنيوم وزجاج عالية الجودة.",
+          "cat_windows_title1": "نوافذ",
+          "cat_windows_desc1": "نوافذ ألمنيوم وزجاج عالية الجودة.",
 
-          "cat_doors_title": "أبواب",
-         "cat_doors_desc": "أنظمة أبواب حديثة لجميع المساحات.",
+          "cat_doors_title1": "أبواب",
+         "cat_doors_desc1": "أنظمة أبواب حديثة لجميع المساحات.",
 
-          "cat_shower_title": "شاور بوكس",
-          "cat_shower_desc": "حلول زجاج أنيقة لغرف الاستحمام.",
+          "cat_shower_title1": "شاور بوكس",
+          "cat_shower_desc1": "حلول زجاج أنيقة لغرف الاستحمام.",
 
-          "cat_facades_title": "واجهات",
-          "cat_facades_desc": "واجهات مباني وستائر زجاجية.",
+          "cat_facades_title1": "واجهات",
+          "cat_facades_desc1": "واجهات مباني وستائر زجاجية.",
 
-          "cat_profiles_title": "بروفيلات ألمنيوم",
-          "cat_profiles_desc": "أنظمة بروفيلات ألمنيوم متطورة.",
+          "cat_profiles_title1": "بروفيلات ألمنيوم",
+          "cat_profiles_desc1": "أنظمة بروفيلات ألمنيوم متطورة.",
 
-          "cat_sheets_title": "ألواح ألمنيوم",
-          "cat_sheets_desc": "ألواح ألمنيوم عالية المتانة.",
+          "cat_sheets_title1": "ألواح ألمنيوم",
+          "cat_sheets_desc1": "ألواح ألمنيوم عالية المتانة.",
 
-          "cat_railings_title": "درابزين",
-          "cat_railings_desc": "حلول درابزين آمنة وعصرية.",
+          "cat_railings_title1": "درابزين",
+          "cat_railings_desc1": "حلول درابزين آمنة وعصرية.",
 
-          "cat_blinds_title": "ستائر",
-          "cat_blinds_desc": "أنظمة ستائر وتظليل حديثة.",
+          "cat_blinds_title1": "ستائر",
+          "cat_blinds_desc1": "أنظمة ستائر وتظليل حديثة.",
 
           "show_all_btn": "عرض جميع الفئات",
 
@@ -404,6 +442,44 @@
           "hist_2020": "نمو القيادة والتواجد الدولي.",
 
           "cat":"الفئات",
+
+          "cat_title": "جميع الفئات",
+
+          "cat_windows_title": "شبابيك",
+          "cat_windows_desc": "شبابيك ألمنيوم وزجاج عالية الجودة.",
+
+          "cat_doors_title": "أبواب",
+          "cat_doors_desc": "أنظمة أبواب حديثة لكل المساحات.",
+
+          "cat_shower_title": "مغاسل دوش",
+          "cat_shower_desc": "حلول زجاج الدوش الأنيقة.",
+
+          "cat_facades_title": "واجهات",
+          "cat_facades_desc": "واجهات مباني وستائر زجاجية.",
+
+          "cat_profiles_title": "بروفيلات",
+          "cat_profiles_desc": "أنظمة بروفيلات ألمنيوم متطورة.",
+
+          "cat_sheets_title": "ألواح",
+          "cat_sheets_desc": "ألواح ألمنيوم قوية ومتينة.",
+
+          "cat_railings_title": "درابزين",
+          "cat_railings_desc": "حلول درابزين آمنة وأنيقة.",
+
+          "cat_blinds_title": "ستائر",
+          "cat_blinds_desc": "أنظمة ستائر حديثة.",
+
+          "cat_brackets_title": "براكتات",
+          "cat_brackets_desc": "حوامل ألمنيوم قوية ومتينة.",
+
+          "cat_rods_title": "قضبان",
+          "cat_rods_desc": "قضبان ألمنيوم عالية الجودة.",
+
+          "cat_tubes_title": "أنابيب",
+          "cat_tubes_desc": "أنابيب ألمنيوم دقيقة ومقواة.",
+
+          "cat_accessories_title": "إكسسوارات",
+          "cat_accessories_desc": "إكسسوارات كاملة لأنظمة الألمنيوم."
 
 
 
