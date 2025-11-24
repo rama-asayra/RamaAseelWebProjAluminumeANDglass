@@ -1,487 +1,3211 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Products - Asayra Aluminum Trading</title>
-    <link rel="stylesheet" href="fontawesome/css/all.css">
+<!--<!DOCTYPE html>-->
+<!--<html lang='en'>-->
+<!--<head>-->
+<!--  <meta charset='UTF-8'>-->
+<!--  <meta name='viewport' content='width=device-width, initial-scale=1.0'>-->
+<!--  <title>Products - Asayra Aluminum Trading</title>-->
+<!--    <link rel="stylesheet" href="fontawesome/css/all.css">-->
 
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel='stylesheet' href='css/style.css'>
-    <link rel="shortcut icon" href="img/icon.jpg">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">-->
+<!--  <link rel='stylesheet' href='css/style.css'>-->
+<!--    <link rel="shortcut icon" href="img/icon.jpg">-->
 
-</head>
-<body>
-  <header>
-    <nav class='navbar'>
-      <div class='logo' data-key='siteName'>Asayra Aluminum Trading</div>
-      <ul class='nav-links'>
-        <li><a href='index.html' data-key='home'>Home</a></li>
-          <li><a href='categories.html' data-key='cat'>Categories</a></li>
+<!--</head>-->
+<!--<body>-->
+<!--  <header>-->
+<!--    <nav class='navbar'>-->
+<!--      <div class='logo' data-key='siteName'>Asayra Aluminum Trading</div>-->
+<!--      <ul class='nav-links'>-->
+<!--        <li><a href='index.html' data-key='home'>Home</a></li>-->
+<!--          <li><a href='categories.html' data-key='cat'>Categories</a></li>-->
 
-          <li><a href='products.html' class='active' data-key='products'>Products</a></li>
-        <li><a href='cart.html' id='cart-link' data-key='cart'>Cart <span id='cart-count' class='cart-count'>0</span></a></li>
-          <li><a href='aboutUs.html' data-key="aboutNav">About us </a></li>
-      </ul>
-<!--      <div class='language-switch'>-->
-<!--        <button id='lang-en'>EN</button>-->
-<!--        <button id='lang-ar'>AR</button>-->
-<!--      </div>-->
+<!--          <li><a href='products.html' class='active' data-key='products'>Products</a></li>-->
+<!--        <li><a href='cart.html' id='cart-link' data-key='cart'>Cart <span id='cart-count' class='cart-count'>0</span></a></li>-->
+<!--          <li><a href='aboutUs.html' data-key="aboutNav">About us </a></li>-->
+<!--      </ul>-->
+<!--&lt;!&ndash;      <div class='language-switch'>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button id='lang-en'>EN</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button id='lang-ar'>AR</button>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="language-dropdown">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="lang-btn">🌐</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <div class="lang-menu">&ndash;&gt;-->
+<!--&lt;!&ndash;                <button class="lang-option" data-change="en">English</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                <button class="lang-option" data-change="ar">العربية</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
 <!--        <div class="language-dropdown">-->
-<!--            <div class="lang-btn">🌐</div>-->
+<!--            <div class="lang-btn">-->
+<!--                <i class="fas fa-globe"></i>-->
+<!--            </div>-->
 
 <!--            <div class="lang-menu">-->
 <!--                <button class="lang-option" data-change="en">English</button>-->
 <!--                <button class="lang-option" data-change="ar">العربية</button>-->
 <!--            </div>-->
 <!--        </div>-->
-        <div class="language-dropdown">
-            <div class="lang-btn">
-                <i class="fas fa-globe"></i>
+<!--    </nav>-->
+<!--  </header>-->
+
+<!--  <section class='filter-bar'>-->
+<!--    <input type='text' id='search' placeholder='Search...' data-key='searchPlaceholder'>-->
+<!--    <select id='category-filter'>-->
+<!--      <option value='all' data-key='allCategories'>All Categories</option>-->
+<!--      <option value='brackets' data-key='catBrackets'>Brackets</option>-->
+<!--      <option value='rods' data-key='catRods'>Rods</option>-->
+<!--      <option value='sheets' data-key='catSheets'>Sheets</option>-->
+<!--      <option value='profiles' data-key='catProfiles'>Profiles</option>-->
+<!--      <option value='tubes' data-key='catTubes'>Tubes</option>-->
+<!--      <option value='accessories' data-key='catAccessories'>Accessories</option>-->
+<!--    </select>-->
+<!--  </section>-->
+
+<!--  <section class='products'>-->
+<!--    <h2 data-key='ourProducts'>Our Products</h2>-->
+<!--    <div class='product-grid'>-->
+<!--      <div class='product-card' data-category='brackets' data-id='1'>-->
+<!--        <img src='img/brackets.svg' alt='brackets product image'>-->
+<!--        <h3 data-key='product1'>Aluminum Product 1</h3>-->
+<!--        <p class='desc' data-key='desc1'>Description for Aluminum Product 1.</p>-->
+<!--        <p class='price'>$ 11.74</p>-->
+<!--        <button class='add-to-cart' data-price='11.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='1' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='rods' data-id='2'>-->
+<!--        <img src='img/rods.svg' alt='rods product image'>-->
+<!--        <h3 data-key='product2'>Aluminum Product 2</h3>-->
+<!--        <p class='desc' data-key='desc2'>Description for Aluminum Product 2.</p>-->
+<!--        <p class='price'>$ 13.49</p>-->
+<!--        <button class='add-to-cart' data-price='13.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='2' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='sheets' data-id='3'>-->
+<!--        <img src='img/sheets.svg' alt='sheets product image'>-->
+<!--        <h3 data-key='product3'>Aluminum Product 3</h3>-->
+<!--        <p class='desc' data-key='desc3'>Description for Aluminum Product 3.</p>-->
+<!--        <p class='price'>$ 15.24</p>-->
+<!--        <button class='add-to-cart' data-price='15.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='3' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='profiles' data-id='4'>-->
+<!--        <img src='img/profiles.svg' alt='profiles product image'>-->
+<!--        <h3 data-key='product4'>Aluminum Product 4</h3>-->
+<!--        <p class='desc' data-key='desc4'>Description for Aluminum Product 4.</p>-->
+<!--        <p class='price'>$ 16.99</p>-->
+<!--        <button class='add-to-cart' data-price='16.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='4' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='tubes' data-id='5'>-->
+<!--        <img src='img/tubes.svg' alt='tubes product image'>-->
+<!--        <h3 data-key='product5'>Aluminum Product 5</h3>-->
+<!--        <p class='desc' data-key='desc5'>Description for Aluminum Product 5.</p>-->
+<!--        <p class='price'>$ 18.74</p>-->
+<!--        <button class='add-to-cart' data-price='18.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='5' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='accessories' data-id='6'>-->
+<!--        <img src='img/accessories.svg' alt='accessories product image'>-->
+<!--        <h3 data-key='product6'>Aluminum Product 6</h3>-->
+<!--        <p class='desc' data-key='desc6'>Description for Aluminum Product 6.</p>-->
+<!--        <p class='price'>$ 20.49</p>-->
+<!--        <button class='add-to-cart' data-price='20.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='6' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='brackets' data-id='7'>-->
+<!--        <img src='img/brackets.svg' alt='brackets product image'>-->
+<!--        <h3 data-key='product7'>Aluminum Product 7</h3>-->
+<!--        <p class='desc' data-key='desc7'>Description for Aluminum Product 7.</p>-->
+<!--        <p class='price'>$ 22.24</p>-->
+<!--        <button class='add-to-cart' data-price='22.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='7' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='rods' data-id='8'>-->
+<!--        <img src='img/rods.svg' alt='rods product image'>-->
+<!--        <h3 data-key='product8'>Aluminum Product 8</h3>-->
+<!--        <p class='desc' data-key='desc8'>Description for Aluminum Product 8.</p>-->
+<!--        <p class='price'>$ 23.99</p>-->
+<!--        <button class='add-to-cart' data-price='23.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='8' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='sheets' data-id='9'>-->
+<!--        <img src='img/sheets.svg' alt='sheets product image'>-->
+<!--        <h3 data-key='product9'>Aluminum Product 9</h3>-->
+<!--        <p class='desc' data-key='desc9'>Description for Aluminum Product 9.</p>-->
+<!--        <p class='price'>$ 25.74</p>-->
+<!--        <button class='add-to-cart' data-price='25.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='9' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='profiles' data-id='10'>-->
+<!--        <img src='img/profiles.svg' alt='profiles product image'>-->
+<!--        <h3 data-key='product10'>Aluminum Product 10</h3>-->
+<!--        <p class='desc' data-key='desc10'>Description for Aluminum Product 10.</p>-->
+<!--        <p class='price'>$ 27.49</p>-->
+<!--        <button class='add-to-cart' data-price='27.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='10' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='tubes' data-id='11'>-->
+<!--        <img src='img/tubes.svg' alt='tubes product image'>-->
+<!--        <h3 data-key='product11'>Aluminum Product 11</h3>-->
+<!--        <p class='desc' data-key='desc11'>Description for Aluminum Product 11.</p>-->
+<!--        <p class='price'>$ 29.24</p>-->
+<!--        <button class='add-to-cart' data-price='29.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='11' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='accessories' data-id='12'>-->
+<!--        <img src='img/accessories.svg' alt='accessories product image'>-->
+<!--        <h3 data-key='product12'>Aluminum Product 12</h3>-->
+<!--        <p class='desc' data-key='desc12'>Description for Aluminum Product 12.</p>-->
+<!--        <p class='price'>$ 30.99</p>-->
+<!--        <button class='add-to-cart' data-price='30.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='12' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='brackets' data-id='13'>-->
+<!--        <img src='img/brackets.svg' alt='brackets product image'>-->
+<!--        <h3 data-key='product13'>Aluminum Product 13</h3>-->
+<!--        <p class='desc' data-key='desc13'>Description for Aluminum Product 13.</p>-->
+<!--        <p class='price'>$ 32.74</p>-->
+<!--        <button class='add-to-cart' data-price='32.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='13' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='rods' data-id='14'>-->
+<!--        <img src='img/rods.svg' alt='rods product image'>-->
+<!--        <h3 data-key='product14'>Aluminum Product 14</h3>-->
+<!--        <p class='desc' data-key='desc14'>Description for Aluminum Product 14.</p>-->
+<!--        <p class='price'>$ 34.49</p>-->
+<!--        <button class='add-to-cart' data-price='34.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='14' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='sheets' data-id='15'>-->
+<!--        <img src='img/sheets.svg' alt='sheets product image'>-->
+<!--        <h3 data-key='product15'>Aluminum Product 15</h3>-->
+<!--        <p class='desc' data-key='desc15'>Description for Aluminum Product 15.</p>-->
+<!--        <p class='price'>$ 36.24</p>-->
+<!--        <button class='add-to-cart' data-price='36.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='15' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='profiles' data-id='16'>-->
+<!--        <img src='img/profiles.svg' alt='profiles product image'>-->
+<!--        <h3 data-key='product16'>Aluminum Product 16</h3>-->
+<!--        <p class='desc' data-key='desc16'>Description for Aluminum Product 16.</p>-->
+<!--        <p class='price'>$ 37.99</p>-->
+<!--        <button class='add-to-cart' data-price='37.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='16' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='tubes' data-id='17'>-->
+<!--        <img src='img/tubes.svg' alt='tubes product image'>-->
+<!--        <h3 data-key='product17'>Aluminum Product 17</h3>-->
+<!--        <p class='desc' data-key='desc17'>Description for Aluminum Product 17.</p>-->
+<!--        <p class='price'>$ 39.74</p>-->
+<!--        <button class='add-to-cart' data-price='39.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='17' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='accessories' data-id='18'>-->
+<!--        <img src='img/accessories.svg' alt='accessories product image'>-->
+<!--        <h3 data-key='product18'>Aluminum Product 18</h3>-->
+<!--        <p class='desc' data-key='desc18'>Description for Aluminum Product 18.</p>-->
+<!--        <p class='price'>$ 41.49</p>-->
+<!--        <button class='add-to-cart' data-price='41.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='18' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='brackets' data-id='19'>-->
+<!--        <img src='img/brackets.svg' alt='brackets product image'>-->
+<!--        <h3 data-key='product19'>Aluminum Product 19</h3>-->
+<!--        <p class='desc' data-key='desc19'>Description for Aluminum Product 19.</p>-->
+<!--        <p class='price'>$ 43.24</p>-->
+<!--        <button class='add-to-cart' data-price='43.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='19' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='rods' data-id='20'>-->
+<!--        <img src='img/rods.svg' alt='rods product image'>-->
+<!--        <h3 data-key='product20'>Aluminum Product 20</h3>-->
+<!--        <p class='desc' data-key='desc20'>Description for Aluminum Product 20.</p>-->
+<!--        <p class='price'>$ 44.99</p>-->
+<!--        <button class='add-to-cart' data-price='44.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='20' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='sheets' data-id='21'>-->
+<!--        <img src='img/sheets.svg' alt='sheets product image'>-->
+<!--        <h3 data-key='product21'>Aluminum Product 21</h3>-->
+<!--        <p class='desc' data-key='desc21'>Description for Aluminum Product 21.</p>-->
+<!--        <p class='price'>$ 46.74</p>-->
+<!--        <button class='add-to-cart' data-price='46.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='21' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='profiles' data-id='22'>-->
+<!--        <img src='img/profiles.svg' alt='profiles product image'>-->
+<!--        <h3 data-key='product22'>Aluminum Product 22</h3>-->
+<!--        <p class='desc' data-key='desc22'>Description for Aluminum Product 22.</p>-->
+<!--        <p class='price'>$ 48.49</p>-->
+<!--        <button class='add-to-cart' data-price='48.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='22' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='tubes' data-id='23'>-->
+<!--        <img src='img/tubes.svg' alt='tubes product image'>-->
+<!--        <h3 data-key='product23'>Aluminum Product 23</h3>-->
+<!--        <p class='desc' data-key='desc23'>Description for Aluminum Product 23.</p>-->
+<!--        <p class='price'>$ 50.24</p>-->
+<!--        <button class='add-to-cart' data-price='50.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='23' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='accessories' data-id='24'>-->
+<!--        <img src='img/accessories.svg' alt='accessories product image'>-->
+<!--        <h3 data-key='product24'>Aluminum Product 24</h3>-->
+<!--        <p class='desc' data-key='desc24'>Description for Aluminum Product 24.</p>-->
+<!--        <p class='price'>$ 51.99</p>-->
+<!--        <button class='add-to-cart' data-price='51.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='24' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='brackets' data-id='25'>-->
+<!--        <img src='img/brackets.svg' alt='brackets product image'>-->
+<!--        <h3 data-key='product25'>Aluminum Product 25</h3>-->
+<!--        <p class='desc' data-key='desc25'>Description for Aluminum Product 25.</p>-->
+<!--        <p class='price'>$ 53.74</p>-->
+<!--        <button class='add-to-cart' data-price='53.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='25' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='rods' data-id='26'>-->
+<!--        <img src='img/rods.svg' alt='rods product image'>-->
+<!--        <h3 data-key='product26'>Aluminum Product 26</h3>-->
+<!--        <p class='desc' data-key='desc26'>Description for Aluminum Product 26.</p>-->
+<!--        <p class='price'>$ 55.49</p>-->
+<!--        <button class='add-to-cart' data-price='55.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='26' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='sheets' data-id='27'>-->
+<!--        <img src='img/sheets.svg' alt='sheets product image'>-->
+<!--        <h3 data-key='product27'>Aluminum Product 27</h3>-->
+<!--        <p class='desc' data-key='desc27'>Description for Aluminum Product 27.</p>-->
+<!--        <p class='price'>$ 57.24</p>-->
+<!--        <button class='add-to-cart' data-price='57.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='27' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='profiles' data-id='28'>-->
+<!--        <img src='img/profiles.svg' alt='profiles product image'>-->
+<!--        <h3 data-key='product28'>Aluminum Product 28</h3>-->
+<!--        <p class='desc' data-key='desc28'>Description for Aluminum Product 28.</p>-->
+<!--        <p class='price'>$ 58.99</p>-->
+<!--        <button class='add-to-cart' data-price='58.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='28' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='tubes' data-id='29'>-->
+<!--        <img src='img/tubes.svg' alt='tubes product image'>-->
+<!--        <h3 data-key='product29'>Aluminum Product 29</h3>-->
+<!--        <p class='desc' data-key='desc29'>Description for Aluminum Product 29.</p>-->
+<!--        <p class='price'>$ 60.74</p>-->
+<!--        <button class='add-to-cart' data-price='60.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='29' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='accessories' data-id='30'>-->
+<!--        <img src='img/accessories.svg' alt='accessories product image'>-->
+<!--        <h3 data-key='product30'>Aluminum Product 30</h3>-->
+<!--        <p class='desc' data-key='desc30'>Description for Aluminum Product 30.</p>-->
+<!--        <p class='price'>$ 62.49</p>-->
+<!--        <button class='add-to-cart' data-price='62.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='30' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='brackets' data-id='31'>-->
+<!--        <img src='img/brackets.svg' alt='brackets product image'>-->
+<!--        <h3 data-key='product31'>Aluminum Product 31</h3>-->
+<!--        <p class='desc' data-key='desc31'>Description for Aluminum Product 31.</p>-->
+<!--        <p class='price'>$ 64.24</p>-->
+<!--        <button class='add-to-cart' data-price='64.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='31' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='rods' data-id='32'>-->
+<!--        <img src='img/rods.svg' alt='rods product image'>-->
+<!--        <h3 data-key='product32'>Aluminum Product 32</h3>-->
+<!--        <p class='desc' data-key='desc32'>Description for Aluminum Product 32.</p>-->
+<!--        <p class='price'>$ 65.99</p>-->
+<!--        <button class='add-to-cart' data-price='65.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='32' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='sheets' data-id='33'>-->
+<!--        <img src='img/sheets.svg' alt='sheets product image'>-->
+<!--        <h3 data-key='product33'>Aluminum Product 33</h3>-->
+<!--        <p class='desc' data-key='desc33'>Description for Aluminum Product 33.</p>-->
+<!--        <p class='price'>$ 67.74</p>-->
+<!--        <button class='add-to-cart' data-price='67.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='33' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='profiles' data-id='34'>-->
+<!--        <img src='img/profiles.svg' alt='profiles product image'>-->
+<!--        <h3 data-key='product34'>Aluminum Product 34</h3>-->
+<!--        <p class='desc' data-key='desc34'>Description for Aluminum Product 34.</p>-->
+<!--        <p class='price'>$ 69.49</p>-->
+<!--        <button class='add-to-cart' data-price='69.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='34' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='tubes' data-id='35'>-->
+<!--        <img src='img/tubes.svg' alt='tubes product image'>-->
+<!--        <h3 data-key='product35'>Aluminum Product 35</h3>-->
+<!--        <p class='desc' data-key='desc35'>Description for Aluminum Product 35.</p>-->
+<!--        <p class='price'>$ 71.24</p>-->
+<!--        <button class='add-to-cart' data-price='71.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='35' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='accessories' data-id='36'>-->
+<!--        <img src='img/accessories.svg' alt='accessories product image'>-->
+<!--        <h3 data-key='product36'>Aluminum Product 36</h3>-->
+<!--        <p class='desc' data-key='desc36'>Description for Aluminum Product 36.</p>-->
+<!--        <p class='price'>$ 72.99</p>-->
+<!--        <button class='add-to-cart' data-price='72.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='36' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='brackets' data-id='37'>-->
+<!--        <img src='img/brackets.svg' alt='brackets product image'>-->
+<!--        <h3 data-key='product37'>Aluminum Product 37</h3>-->
+<!--        <p class='desc' data-key='desc37'>Description for Aluminum Product 37.</p>-->
+<!--        <p class='price'>$ 74.74</p>-->
+<!--        <button class='add-to-cart' data-price='74.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='37' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='rods' data-id='38'>-->
+<!--        <img src='img/rods.svg' alt='rods product image'>-->
+<!--        <h3 data-key='product38'>Aluminum Product 38</h3>-->
+<!--        <p class='desc' data-key='desc38'>Description for Aluminum Product 38.</p>-->
+<!--        <p class='price'>$ 76.49</p>-->
+<!--        <button class='add-to-cart' data-price='76.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='38' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='sheets' data-id='39'>-->
+<!--        <img src='img/sheets.svg' alt='sheets product image'>-->
+<!--        <h3 data-key='product39'>Aluminum Product 39</h3>-->
+<!--        <p class='desc' data-key='desc39'>Description for Aluminum Product 39.</p>-->
+<!--        <p class='price'>$ 78.24</p>-->
+<!--        <button class='add-to-cart' data-price='78.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='39' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='profiles' data-id='40'>-->
+<!--        <img src='img/profiles.svg' alt='profiles product image'>-->
+<!--        <h3 data-key='product40'>Aluminum Product 40</h3>-->
+<!--        <p class='desc' data-key='desc40'>Description for Aluminum Product 40.</p>-->
+<!--        <p class='price'>$ 79.99</p>-->
+<!--        <button class='add-to-cart' data-price='79.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='40' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='tubes' data-id='41'>-->
+<!--        <img src='img/tubes.svg' alt='tubes product image'>-->
+<!--        <h3 data-key='product41'>Aluminum Product 41</h3>-->
+<!--        <p class='desc' data-key='desc41'>Description for Aluminum Product 41.</p>-->
+<!--        <p class='price'>$ 81.74</p>-->
+<!--        <button class='add-to-cart' data-price='81.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='41' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='accessories' data-id='42'>-->
+<!--        <img src='img/accessories.svg' alt='accessories product image'>-->
+<!--        <h3 data-key='product42'>Aluminum Product 42</h3>-->
+<!--        <p class='desc' data-key='desc42'>Description for Aluminum Product 42.</p>-->
+<!--        <p class='price'>$ 83.49</p>-->
+<!--        <button class='add-to-cart' data-price='83.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='42' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='brackets' data-id='43'>-->
+<!--        <img src='img/brackets.svg' alt='brackets product image'>-->
+<!--        <h3 data-key='product43'>Aluminum Product 43</h3>-->
+<!--        <p class='desc' data-key='desc43'>Description for Aluminum Product 43.</p>-->
+<!--        <p class='price'>$ 85.24</p>-->
+<!--        <button class='add-to-cart' data-price='85.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='43' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='rods' data-id='44'>-->
+<!--        <img src='img/rods.svg' alt='rods product image'>-->
+<!--        <h3 data-key='product44'>Aluminum Product 44</h3>-->
+<!--        <p class='desc' data-key='desc44'>Description for Aluminum Product 44.</p>-->
+<!--        <p class='price'>$ 86.99</p>-->
+<!--        <button class='add-to-cart' data-price='86.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='44' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='sheets' data-id='45'>-->
+<!--        <img src='img/sheets.svg' alt='sheets product image'>-->
+<!--        <h3 data-key='product45'>Aluminum Product 45</h3>-->
+<!--        <p class='desc' data-key='desc45'>Description for Aluminum Product 45.</p>-->
+<!--        <p class='price'>$ 88.74</p>-->
+<!--        <button class='add-to-cart' data-price='88.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='45' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='profiles' data-id='46'>-->
+<!--        <img src='img/profiles.svg' alt='profiles product image'>-->
+<!--        <h3 data-key='product46'>Aluminum Product 46</h3>-->
+<!--        <p class='desc' data-key='desc46'>Description for Aluminum Product 46.</p>-->
+<!--        <p class='price'>$ 90.49</p>-->
+<!--        <button class='add-to-cart' data-price='90.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='46' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='tubes' data-id='47'>-->
+<!--        <img src='img/tubes.svg' alt='tubes product image'>-->
+<!--        <h3 data-key='product47'>Aluminum Product 47</h3>-->
+<!--        <p class='desc' data-key='desc47'>Description for Aluminum Product 47.</p>-->
+<!--        <p class='price'>$ 92.24</p>-->
+<!--        <button class='add-to-cart' data-price='92.24' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='47' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='accessories' data-id='48'>-->
+<!--        <img src='img/accessories.svg' alt='accessories product image'>-->
+<!--        <h3 data-key='product48'>Aluminum Product 48</h3>-->
+<!--        <p class='desc' data-key='desc48'>Description for Aluminum Product 48.</p>-->
+<!--        <p class='price'>$ 93.99</p>-->
+<!--        <button class='add-to-cart' data-price='93.99' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='48' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='brackets' data-id='49'>-->
+<!--        <img src='img/brackets.svg' alt='brackets product image'>-->
+<!--        <h3 data-key='product49'>Aluminum Product 49</h3>-->
+<!--        <p class='desc' data-key='desc49'>Description for Aluminum Product 49.</p>-->
+<!--        <p class='price'>$ 95.74</p>-->
+<!--        <button class='add-to-cart' data-price='95.74' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='49' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--      <div class='product-card' data-category='rods' data-id='50'>-->
+<!--        <img src='img/rods.svg' alt='rods product image'>-->
+<!--        <h3 data-key='product50'>Aluminum Product 50</h3>-->
+<!--        <p class='desc' data-key='desc50'>Description for Aluminum Product 50.</p>-->
+<!--        <p class='price'>$ 97.49</p>-->
+<!--        <button class='add-to-cart' data-price='97.49' data-key='addToCart'>Add to Cart</button>-->
+<!--        <button class='view-details' data-id='50' data-key='viewDetails'>View Details</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+<!--  <div id='product-modal' class='modal'>-->
+<!--    <div class='modal-content'>-->
+<!--      <span class='close' aria-label='Close'>&times;</span>-->
+<!--      <img id='modal-img' src='' alt=''>-->
+<!--      <h3 id='modal-name'></h3>-->
+<!--      <p id='modal-desc'></p>-->
+<!--      <p id='modal-price'></p>-->
+<!--      <button id='modal-add' class='btn' data-key='addToCart'>Add to Cart</button>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <footer>-->
+<!--    <p data-key='footer'>© 2025 Asayra Aluminum Trading. All rights reserved.</p>-->
+<!--  </footer>-->
+<!--  <script src='js/app.js'></script>-->
+<!--  <script src='js/cart.js'></script>-->
+<!--</body>-->
+<!--</html>-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Products - Asayra Aluminum Trading</title>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="stylesheet" href="fontawesome/css/all.css">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">-->
+<!--    <link rel="stylesheet" href="css/prodstyle.css">-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!-- FILTER SECTION-->
+<!--<section class="top-filter-bar">-->
+<!--    <div class="filter-left">-->
+<!--        <button class="filter-btn active" data-filter="all">All</button>-->
+<!--        <button class="filter-btn" data-filter="brackets">Brackets</button>-->
+<!--        <button class="filter-btn" data-filter="rods">Rods</button>-->
+<!--        <button class="filter-btn" data-filter="sheets">Sheets</button>-->
+<!--        <button class="filter-btn" data-filter="profiles">Profiles</button>-->
+<!--        <button class="filter-btn" data-filter="tubes">Tubes</button>-->
+<!--        <button class="filter-btn" data-filter="accessories">Accessories</button>-->
+<!--    </div>-->
+
+<!--    <div class="sort-area">-->
+<!--        Sort by:-->
+<!--        <select>-->
+<!--            <option>Featured</option>-->
+<!--            <option>Price Low → High</option>-->
+<!--            <option>Price High → Low</option>-->
+<!--        </select>-->
+<!--    </div>-->
+<!--</section>-->
+<!--<section class="top-filter-bar">-->
+<!--    <div class="filter-left">-->
+<!--        <button class="filter-btn active" data-filter="all">All</button>-->
+
+<!--        <button class="filter-btn" data-filter="window">Windows</button>-->
+<!--        <button class="filter-btn" data-filter="door">Doors</button>-->
+<!--        <button class="filter-btn" data-filter="shower">Shower</button>-->
+<!--        <button class="filter-btn" data-filter="railing">Railings</button>-->
+<!--        <button class="filter-btn" data-filter="blind">Blinds</button>-->
+<!--        <button class="filter-btn" data-filter="facades">Facades</button>-->
+
+<!--        <button class="filter-btn" data-filter="brackets">Brackets</button>-->
+<!--        <button class="filter-btn" data-filter="rods">Rods</button>-->
+<!--        <button class="filter-btn" data-filter="sheets">Sheets</button>-->
+<!--        <button class="filter-btn" data-filter="profiles">Profiles</button>-->
+<!--        <button class="filter-btn" data-filter="tubes">Tubes</button>-->
+<!--        <button class="filter-btn" data-filter="accessories">Accessories</button>-->
+<!--    </div>-->
+
+<!--    <div class="sort-area">-->
+<!--        Sort by:-->
+<!--        <select>-->
+<!--            <option>Featured</option>-->
+<!--            <option>Price Low → High</option>-->
+<!--            <option>Price High → Low</option>-->
+<!--        </select>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; PRODUCTS &ndash;&gt;-->
+<!--<section class="products">-->
+<!--    <div class="product-grid">-->
+
+<!--        <div class="product-card" data-category="brackets">-->
+<!--            <div class="product-img">-->
+<!--                <img src="img/brackets.jpg">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <span class="product-cat">Brackets</span>-->
+<!--                <h3>Aluminum Bracket</h3>-->
+<!--                <p class="desc">Strong and durable aluminum bracket for construction use.</p>-->
+<!--                <div class="price">$11.74</div>-->
+<!--                <button class="add-to-cart">Add to Cart</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="product-card" data-category="rods">-->
+<!--            <div class="product-img">-->
+<!--                <img src="img/rods.jpg">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <span class="product-cat">Rods</span>-->
+<!--                <h3>Aluminum Rod</h3>-->
+<!--                <p class="desc">High quality aluminum rod for industrial usage.</p>-->
+<!--                <div class="price">$13.49</div>-->
+<!--                <button class="add-to-cart">Add to Cart</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="product-card" data-category="sheets">-->
+<!--            <div class="product-img">-->
+<!--                <img src="img/sheets.jpg">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <span class="product-cat">Sheets</span>-->
+<!--                <h3>Aluminum Sheet</h3>-->
+<!--                <p class="desc">Premium aluminum sheet for various applications.</p>-->
+<!--                <div class="price">$15.24</div>-->
+<!--                <button class="add-to-cart">Add to Cart</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="product-card" data-category="profiles">-->
+<!--            <div class="product-img">-->
+<!--                <img src="img/profiles.jpg">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <span class="product-cat">Profiles</span>-->
+<!--                <h3>Aluminum Profile</h3>-->
+<!--                <p class="desc">Advanced aluminum profile systems.</p>-->
+<!--                <div class="price">$16.99</div>-->
+<!--                <button class="add-to-cart">Add to Cart</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="product-card" data-category="tubes">-->
+<!--            <div class="product-img">-->
+<!--                <img src="img/tubes.jpg">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <span class="product-cat">Tubes</span>-->
+<!--                <h3>Aluminum Tube</h3>-->
+<!--                <p class="desc">Strong precision aluminum tubes.</p>-->
+<!--                <div class="price">$18.74</div>-->
+<!--                <button class="add-to-cart">Add to Cart</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="product-card" data-category="accessories">-->
+<!--            <div class="product-img">-->
+<!--                <img src="img/accessories.jpg">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <span class="product-cat">Accessories</span>-->
+<!--                <h3>Aluminum Accessories</h3>-->
+<!--                <p class="desc">Complete accessories for aluminum systems.</p>-->
+<!--                <div class="price">$20.49</div>-->
+<!--                <button class="add-to-cart">Add to Cart</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; FILTER SCRIPT &ndash;&gt;-->
+<!--<script src='js/prod.js'></script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Premium Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin:0;
+            font-family:'Poppins', sans-serif;
+            background:#f4f7fb;
+        }
+
+        .products-page{
+            padding:60px 8%;
+        }
+
+        .section-title{
+            text-align:center;
+            font-size:34px;
+            margin-bottom:40px;
+            color:#002f66;
+        }
+
+        /* FILTER */
+        .filter-bar{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .filter-btn{
+            background:#fff;
+            border:1px solid #0058AC;
+            color:#0058AC;
+            padding:8px 16px;
+            border-radius:30px;
+            margin:5px;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover{
+            background:#0058AC;
+            color:#fff;
+        }
+
+        /* GRID */
+        .product-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:30px;
+        }
+
+        /* CARD */
+        .product-card{
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+            transition:.4s ease;
+        }
+
+        .product-card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 20px 40px rgba(0,88,172,0.25);
+        }
+
+        /* IMAGE */
+        .product-img{
+            position:relative;
+            height:230px;
+            overflow:hidden;
+        }
+
+        .product-img img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            transition:.6s ease;
+        }
+
+        .product-card:hover img{
+            transform:scale(1.1);
+        }
+
+        .category-glow{
+            position:absolute;
+            top:15px;
+            left:15px;
+            background:#0058AC;
+            color:#fff;
+            padding:6px 14px;
+            border-radius:20px;
+            font-size:13px;
+        }
+
+        /* glass overlay */
+        .glass-overlay{
+            position:absolute;
+            inset:0;
+            background:rgba(0,0,0,0.4);
+            backdrop-filter:blur(6px);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            opacity:0;
+            transition:.4s;
+        }
+
+        .product-card:hover .glass-overlay{
+            opacity:1;
+        }
+
+        .details-btn{
+            padding:12px 26px;
+            border:none;
+            border-radius:30px;
+            background:linear-gradient(45deg,#0058AC,#00b4ff);
+            color:#fff;
+            cursor:pointer;
+            font-weight:600;
+        }
+
+        /* INFO */
+        .product-info{
+            padding:18px;
+        }
+
+        .product-info h3{
+            margin:0 0 8px;
+        }
+
+        .product-info p{
+            font-size:14px;
+            color:#555;
+        }
+
+        /* FOOTER */
+        .product-footer{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-top:15px;
+        }
+
+        .price{
+            font-weight:bold;
+            color:#0058AC;
+            font-size:18px;
+        }
+
+        .cart-btn{
+            width:45px;
+            height:45px;
+            background:#0058AC;
+            color:#fff;
+            border:none;
+            border-radius:50%;
+            cursor:pointer;
+        }
+
+        /* MODAL */
+        .product-modal{
+            position:fixed;
+            inset:0;
+            background:rgba(0,0,0,0.7);
+            display:none;
+            justify-content:center;
+            align-items:center;
+            z-index:999;
+        }
+
+        .modal-box{
+            background:#fff;
+            padding:25px;
+            border-radius:20px;
+            width:400px;
+            text-align:center;
+            position:relative;
+        }
+
+        .modal-box img{
+            width:100%;
+            border-radius:15px;
+        }
+
+        .close-modal{
+            position:absolute;
+            top:12px;
+            right:15px;
+            font-size:22px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="products-page">
+    <h2 class="section-title">Our Premium Products</h2>
+    <div class="filter-bar">
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="windows">Windows</button>
+            <button class="filter-btn" data-filter="doors">Doors</button>
+            <button class="filter-btn" data-filter="shower">Shower</button>
+            <button class="filter-btn" data-filter="railings">Railings</button>
+            <button class="filter-btn" data-filter="blinds">Blinds</button>
+            <button class="filter-btn" data-filter="facades">Facades</button>
+
+            <button class="filter-btn" data-filter="brackets">Brackets</button>
+            <button class="filter-btn" data-filter="rods">Rods</button>
+            <button class="filter-btn" data-filter="sheets">Sheets</button>
+            <button class="filter-btn" data-filter="profiles">Profiles</button>
+            <button class="filter-btn" data-filter="tubes">Tubes</button>
+            <button class="filter-btn" data-filter="accessories">Accessories</button>
+        </div>
+
+    </div>
+    <div class="product-grid">
+
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
             </div>
 
-            <div class="lang-menu">
-                <button class="lang-option" data-change="en">English</button>
-                <button class="lang-option" data-change="ar">العربية</button>
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
             </div>
         </div>
-    </nav>
-  </header>
 
-  <section class='filter-bar'>
-    <input type='text' id='search' placeholder='Search...' data-key='searchPlaceholder'>
-    <select id='category-filter'>
-      <option value='all' data-key='allCategories'>All Categories</option>
-      <option value='brackets' data-key='catBrackets'>Brackets</option>
-      <option value='rods' data-key='catRods'>Rods</option>
-      <option value='sheets' data-key='catSheets'>Sheets</option>
-      <option value='profiles' data-key='catProfiles'>Profiles</option>
-      <option value='tubes' data-key='catTubes'>Tubes</option>
-      <option value='accessories' data-key='catAccessories'>Accessories</option>
-    </select>
-  </section>
+        <div class="product-card"
+             data-name="Aluminum Rod"
+             data-desc="Premium aluminum rods with smooth finish."
+             data-price="$13.49"
+             data-img="img/rods.jpg">
 
-  <section class='products'>
-    <h2 data-key='ourProducts'>Our Products</h2>
-    <div class='product-grid'>
-      <div class='product-card' data-category='brackets' data-id='1'>
-        <img src='img/brackets.svg' alt='brackets product image'>
-        <h3 data-key='product1'>Aluminum Product 1</h3>
-        <p class='desc' data-key='desc1'>Description for Aluminum Product 1.</p>
-        <p class='price'>$ 11.74</p>
-        <button class='add-to-cart' data-price='11.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='1' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='rods' data-id='2'>
-        <img src='img/rods.svg' alt='rods product image'>
-        <h3 data-key='product2'>Aluminum Product 2</h3>
-        <p class='desc' data-key='desc2'>Description for Aluminum Product 2.</p>
-        <p class='price'>$ 13.49</p>
-        <button class='add-to-cart' data-price='13.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='2' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='sheets' data-id='3'>
-        <img src='img/sheets.svg' alt='sheets product image'>
-        <h3 data-key='product3'>Aluminum Product 3</h3>
-        <p class='desc' data-key='desc3'>Description for Aluminum Product 3.</p>
-        <p class='price'>$ 15.24</p>
-        <button class='add-to-cart' data-price='15.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='3' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='profiles' data-id='4'>
-        <img src='img/profiles.svg' alt='profiles product image'>
-        <h3 data-key='product4'>Aluminum Product 4</h3>
-        <p class='desc' data-key='desc4'>Description for Aluminum Product 4.</p>
-        <p class='price'>$ 16.99</p>
-        <button class='add-to-cart' data-price='16.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='4' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='tubes' data-id='5'>
-        <img src='img/tubes.svg' alt='tubes product image'>
-        <h3 data-key='product5'>Aluminum Product 5</h3>
-        <p class='desc' data-key='desc5'>Description for Aluminum Product 5.</p>
-        <p class='price'>$ 18.74</p>
-        <button class='add-to-cart' data-price='18.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='5' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='accessories' data-id='6'>
-        <img src='img/accessories.svg' alt='accessories product image'>
-        <h3 data-key='product6'>Aluminum Product 6</h3>
-        <p class='desc' data-key='desc6'>Description for Aluminum Product 6.</p>
-        <p class='price'>$ 20.49</p>
-        <button class='add-to-cart' data-price='20.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='6' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='brackets' data-id='7'>
-        <img src='img/brackets.svg' alt='brackets product image'>
-        <h3 data-key='product7'>Aluminum Product 7</h3>
-        <p class='desc' data-key='desc7'>Description for Aluminum Product 7.</p>
-        <p class='price'>$ 22.24</p>
-        <button class='add-to-cart' data-price='22.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='7' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='rods' data-id='8'>
-        <img src='img/rods.svg' alt='rods product image'>
-        <h3 data-key='product8'>Aluminum Product 8</h3>
-        <p class='desc' data-key='desc8'>Description for Aluminum Product 8.</p>
-        <p class='price'>$ 23.99</p>
-        <button class='add-to-cart' data-price='23.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='8' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='sheets' data-id='9'>
-        <img src='img/sheets.svg' alt='sheets product image'>
-        <h3 data-key='product9'>Aluminum Product 9</h3>
-        <p class='desc' data-key='desc9'>Description for Aluminum Product 9.</p>
-        <p class='price'>$ 25.74</p>
-        <button class='add-to-cart' data-price='25.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='9' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='profiles' data-id='10'>
-        <img src='img/profiles.svg' alt='profiles product image'>
-        <h3 data-key='product10'>Aluminum Product 10</h3>
-        <p class='desc' data-key='desc10'>Description for Aluminum Product 10.</p>
-        <p class='price'>$ 27.49</p>
-        <button class='add-to-cart' data-price='27.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='10' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='tubes' data-id='11'>
-        <img src='img/tubes.svg' alt='tubes product image'>
-        <h3 data-key='product11'>Aluminum Product 11</h3>
-        <p class='desc' data-key='desc11'>Description for Aluminum Product 11.</p>
-        <p class='price'>$ 29.24</p>
-        <button class='add-to-cart' data-price='29.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='11' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='accessories' data-id='12'>
-        <img src='img/accessories.svg' alt='accessories product image'>
-        <h3 data-key='product12'>Aluminum Product 12</h3>
-        <p class='desc' data-key='desc12'>Description for Aluminum Product 12.</p>
-        <p class='price'>$ 30.99</p>
-        <button class='add-to-cart' data-price='30.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='12' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='brackets' data-id='13'>
-        <img src='img/brackets.svg' alt='brackets product image'>
-        <h3 data-key='product13'>Aluminum Product 13</h3>
-        <p class='desc' data-key='desc13'>Description for Aluminum Product 13.</p>
-        <p class='price'>$ 32.74</p>
-        <button class='add-to-cart' data-price='32.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='13' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='rods' data-id='14'>
-        <img src='img/rods.svg' alt='rods product image'>
-        <h3 data-key='product14'>Aluminum Product 14</h3>
-        <p class='desc' data-key='desc14'>Description for Aluminum Product 14.</p>
-        <p class='price'>$ 34.49</p>
-        <button class='add-to-cart' data-price='34.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='14' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='sheets' data-id='15'>
-        <img src='img/sheets.svg' alt='sheets product image'>
-        <h3 data-key='product15'>Aluminum Product 15</h3>
-        <p class='desc' data-key='desc15'>Description for Aluminum Product 15.</p>
-        <p class='price'>$ 36.24</p>
-        <button class='add-to-cart' data-price='36.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='15' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='profiles' data-id='16'>
-        <img src='img/profiles.svg' alt='profiles product image'>
-        <h3 data-key='product16'>Aluminum Product 16</h3>
-        <p class='desc' data-key='desc16'>Description for Aluminum Product 16.</p>
-        <p class='price'>$ 37.99</p>
-        <button class='add-to-cart' data-price='37.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='16' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='tubes' data-id='17'>
-        <img src='img/tubes.svg' alt='tubes product image'>
-        <h3 data-key='product17'>Aluminum Product 17</h3>
-        <p class='desc' data-key='desc17'>Description for Aluminum Product 17.</p>
-        <p class='price'>$ 39.74</p>
-        <button class='add-to-cart' data-price='39.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='17' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='accessories' data-id='18'>
-        <img src='img/accessories.svg' alt='accessories product image'>
-        <h3 data-key='product18'>Aluminum Product 18</h3>
-        <p class='desc' data-key='desc18'>Description for Aluminum Product 18.</p>
-        <p class='price'>$ 41.49</p>
-        <button class='add-to-cart' data-price='41.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='18' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='brackets' data-id='19'>
-        <img src='img/brackets.svg' alt='brackets product image'>
-        <h3 data-key='product19'>Aluminum Product 19</h3>
-        <p class='desc' data-key='desc19'>Description for Aluminum Product 19.</p>
-        <p class='price'>$ 43.24</p>
-        <button class='add-to-cart' data-price='43.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='19' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='rods' data-id='20'>
-        <img src='img/rods.svg' alt='rods product image'>
-        <h3 data-key='product20'>Aluminum Product 20</h3>
-        <p class='desc' data-key='desc20'>Description for Aluminum Product 20.</p>
-        <p class='price'>$ 44.99</p>
-        <button class='add-to-cart' data-price='44.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='20' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='sheets' data-id='21'>
-        <img src='img/sheets.svg' alt='sheets product image'>
-        <h3 data-key='product21'>Aluminum Product 21</h3>
-        <p class='desc' data-key='desc21'>Description for Aluminum Product 21.</p>
-        <p class='price'>$ 46.74</p>
-        <button class='add-to-cart' data-price='46.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='21' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='profiles' data-id='22'>
-        <img src='img/profiles.svg' alt='profiles product image'>
-        <h3 data-key='product22'>Aluminum Product 22</h3>
-        <p class='desc' data-key='desc22'>Description for Aluminum Product 22.</p>
-        <p class='price'>$ 48.49</p>
-        <button class='add-to-cart' data-price='48.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='22' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='tubes' data-id='23'>
-        <img src='img/tubes.svg' alt='tubes product image'>
-        <h3 data-key='product23'>Aluminum Product 23</h3>
-        <p class='desc' data-key='desc23'>Description for Aluminum Product 23.</p>
-        <p class='price'>$ 50.24</p>
-        <button class='add-to-cart' data-price='50.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='23' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='accessories' data-id='24'>
-        <img src='img/accessories.svg' alt='accessories product image'>
-        <h3 data-key='product24'>Aluminum Product 24</h3>
-        <p class='desc' data-key='desc24'>Description for Aluminum Product 24.</p>
-        <p class='price'>$ 51.99</p>
-        <button class='add-to-cart' data-price='51.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='24' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='brackets' data-id='25'>
-        <img src='img/brackets.svg' alt='brackets product image'>
-        <h3 data-key='product25'>Aluminum Product 25</h3>
-        <p class='desc' data-key='desc25'>Description for Aluminum Product 25.</p>
-        <p class='price'>$ 53.74</p>
-        <button class='add-to-cart' data-price='53.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='25' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='rods' data-id='26'>
-        <img src='img/rods.svg' alt='rods product image'>
-        <h3 data-key='product26'>Aluminum Product 26</h3>
-        <p class='desc' data-key='desc26'>Description for Aluminum Product 26.</p>
-        <p class='price'>$ 55.49</p>
-        <button class='add-to-cart' data-price='55.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='26' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='sheets' data-id='27'>
-        <img src='img/sheets.svg' alt='sheets product image'>
-        <h3 data-key='product27'>Aluminum Product 27</h3>
-        <p class='desc' data-key='desc27'>Description for Aluminum Product 27.</p>
-        <p class='price'>$ 57.24</p>
-        <button class='add-to-cart' data-price='57.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='27' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='profiles' data-id='28'>
-        <img src='img/profiles.svg' alt='profiles product image'>
-        <h3 data-key='product28'>Aluminum Product 28</h3>
-        <p class='desc' data-key='desc28'>Description for Aluminum Product 28.</p>
-        <p class='price'>$ 58.99</p>
-        <button class='add-to-cart' data-price='58.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='28' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='tubes' data-id='29'>
-        <img src='img/tubes.svg' alt='tubes product image'>
-        <h3 data-key='product29'>Aluminum Product 29</h3>
-        <p class='desc' data-key='desc29'>Description for Aluminum Product 29.</p>
-        <p class='price'>$ 60.74</p>
-        <button class='add-to-cart' data-price='60.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='29' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='accessories' data-id='30'>
-        <img src='img/accessories.svg' alt='accessories product image'>
-        <h3 data-key='product30'>Aluminum Product 30</h3>
-        <p class='desc' data-key='desc30'>Description for Aluminum Product 30.</p>
-        <p class='price'>$ 62.49</p>
-        <button class='add-to-cart' data-price='62.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='30' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='brackets' data-id='31'>
-        <img src='img/brackets.svg' alt='brackets product image'>
-        <h3 data-key='product31'>Aluminum Product 31</h3>
-        <p class='desc' data-key='desc31'>Description for Aluminum Product 31.</p>
-        <p class='price'>$ 64.24</p>
-        <button class='add-to-cart' data-price='64.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='31' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='rods' data-id='32'>
-        <img src='img/rods.svg' alt='rods product image'>
-        <h3 data-key='product32'>Aluminum Product 32</h3>
-        <p class='desc' data-key='desc32'>Description for Aluminum Product 32.</p>
-        <p class='price'>$ 65.99</p>
-        <button class='add-to-cart' data-price='65.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='32' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='sheets' data-id='33'>
-        <img src='img/sheets.svg' alt='sheets product image'>
-        <h3 data-key='product33'>Aluminum Product 33</h3>
-        <p class='desc' data-key='desc33'>Description for Aluminum Product 33.</p>
-        <p class='price'>$ 67.74</p>
-        <button class='add-to-cart' data-price='67.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='33' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='profiles' data-id='34'>
-        <img src='img/profiles.svg' alt='profiles product image'>
-        <h3 data-key='product34'>Aluminum Product 34</h3>
-        <p class='desc' data-key='desc34'>Description for Aluminum Product 34.</p>
-        <p class='price'>$ 69.49</p>
-        <button class='add-to-cart' data-price='69.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='34' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='tubes' data-id='35'>
-        <img src='img/tubes.svg' alt='tubes product image'>
-        <h3 data-key='product35'>Aluminum Product 35</h3>
-        <p class='desc' data-key='desc35'>Description for Aluminum Product 35.</p>
-        <p class='price'>$ 71.24</p>
-        <button class='add-to-cart' data-price='71.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='35' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='accessories' data-id='36'>
-        <img src='img/accessories.svg' alt='accessories product image'>
-        <h3 data-key='product36'>Aluminum Product 36</h3>
-        <p class='desc' data-key='desc36'>Description for Aluminum Product 36.</p>
-        <p class='price'>$ 72.99</p>
-        <button class='add-to-cart' data-price='72.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='36' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='brackets' data-id='37'>
-        <img src='img/brackets.svg' alt='brackets product image'>
-        <h3 data-key='product37'>Aluminum Product 37</h3>
-        <p class='desc' data-key='desc37'>Description for Aluminum Product 37.</p>
-        <p class='price'>$ 74.74</p>
-        <button class='add-to-cart' data-price='74.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='37' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='rods' data-id='38'>
-        <img src='img/rods.svg' alt='rods product image'>
-        <h3 data-key='product38'>Aluminum Product 38</h3>
-        <p class='desc' data-key='desc38'>Description for Aluminum Product 38.</p>
-        <p class='price'>$ 76.49</p>
-        <button class='add-to-cart' data-price='76.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='38' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='sheets' data-id='39'>
-        <img src='img/sheets.svg' alt='sheets product image'>
-        <h3 data-key='product39'>Aluminum Product 39</h3>
-        <p class='desc' data-key='desc39'>Description for Aluminum Product 39.</p>
-        <p class='price'>$ 78.24</p>
-        <button class='add-to-cart' data-price='78.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='39' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='profiles' data-id='40'>
-        <img src='img/profiles.svg' alt='profiles product image'>
-        <h3 data-key='product40'>Aluminum Product 40</h3>
-        <p class='desc' data-key='desc40'>Description for Aluminum Product 40.</p>
-        <p class='price'>$ 79.99</p>
-        <button class='add-to-cart' data-price='79.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='40' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='tubes' data-id='41'>
-        <img src='img/tubes.svg' alt='tubes product image'>
-        <h3 data-key='product41'>Aluminum Product 41</h3>
-        <p class='desc' data-key='desc41'>Description for Aluminum Product 41.</p>
-        <p class='price'>$ 81.74</p>
-        <button class='add-to-cart' data-price='81.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='41' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='accessories' data-id='42'>
-        <img src='img/accessories.svg' alt='accessories product image'>
-        <h3 data-key='product42'>Aluminum Product 42</h3>
-        <p class='desc' data-key='desc42'>Description for Aluminum Product 42.</p>
-        <p class='price'>$ 83.49</p>
-        <button class='add-to-cart' data-price='83.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='42' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='brackets' data-id='43'>
-        <img src='img/brackets.svg' alt='brackets product image'>
-        <h3 data-key='product43'>Aluminum Product 43</h3>
-        <p class='desc' data-key='desc43'>Description for Aluminum Product 43.</p>
-        <p class='price'>$ 85.24</p>
-        <button class='add-to-cart' data-price='85.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='43' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='rods' data-id='44'>
-        <img src='img/rods.svg' alt='rods product image'>
-        <h3 data-key='product44'>Aluminum Product 44</h3>
-        <p class='desc' data-key='desc44'>Description for Aluminum Product 44.</p>
-        <p class='price'>$ 86.99</p>
-        <button class='add-to-cart' data-price='86.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='44' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='sheets' data-id='45'>
-        <img src='img/sheets.svg' alt='sheets product image'>
-        <h3 data-key='product45'>Aluminum Product 45</h3>
-        <p class='desc' data-key='desc45'>Description for Aluminum Product 45.</p>
-        <p class='price'>$ 88.74</p>
-        <button class='add-to-cart' data-price='88.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='45' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='profiles' data-id='46'>
-        <img src='img/profiles.svg' alt='profiles product image'>
-        <h3 data-key='product46'>Aluminum Product 46</h3>
-        <p class='desc' data-key='desc46'>Description for Aluminum Product 46.</p>
-        <p class='price'>$ 90.49</p>
-        <button class='add-to-cart' data-price='90.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='46' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='tubes' data-id='47'>
-        <img src='img/tubes.svg' alt='tubes product image'>
-        <h3 data-key='product47'>Aluminum Product 47</h3>
-        <p class='desc' data-key='desc47'>Description for Aluminum Product 47.</p>
-        <p class='price'>$ 92.24</p>
-        <button class='add-to-cart' data-price='92.24' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='47' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='accessories' data-id='48'>
-        <img src='img/accessories.svg' alt='accessories product image'>
-        <h3 data-key='product48'>Aluminum Product 48</h3>
-        <p class='desc' data-key='desc48'>Description for Aluminum Product 48.</p>
-        <p class='price'>$ 93.99</p>
-        <button class='add-to-cart' data-price='93.99' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='48' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='brackets' data-id='49'>
-        <img src='img/brackets.svg' alt='brackets product image'>
-        <h3 data-key='product49'>Aluminum Product 49</h3>
-        <p class='desc' data-key='desc49'>Description for Aluminum Product 49.</p>
-        <p class='price'>$ 95.74</p>
-        <button class='add-to-cart' data-price='95.74' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='49' data-key='viewDetails'>View Details</button>
-      </div>
-      <div class='product-card' data-category='rods' data-id='50'>
-        <img src='img/rods.svg' alt='rods product image'>
-        <h3 data-key='product50'>Aluminum Product 50</h3>
-        <p class='desc' data-key='desc50'>Description for Aluminum Product 50.</p>
-        <p class='price'>$ 97.49</p>
-        <button class='add-to-cart' data-price='97.49' data-key='addToCart'>Add to Cart</button>
-        <button class='view-details' data-id='50' data-key='viewDetails'>View Details</button>
-      </div>
+            <div class="product-img">
+                <img src="img/rods.jpg">
+                <span class="category-glow">Rods</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Rod</h3>
+                <p>Premium aluminum rods with smooth finish.</p>
+                <div class="product-footer">
+                    <span class="price">$13.49</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card"
+             data-name="Aluminum Bracket"
+             data-desc="High-strength aluminum bracket for heavy duty usage."
+             data-price="$11.74"
+             data-img="img/brackets.jpg">
+
+            <div class="product-img">
+                <img src="img/brackets.jpg">
+                <span class="category-glow">Brackets</span>
+                <div class="glass-overlay">
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h3>Aluminum Bracket</h3>
+                <p>High-strength aluminum bracket for heavy duty usage.</p>
+                <div class="product-footer">
+                    <span class="price">$11.74</span>
+                    <button class="cart-btn"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </section>
+</section>
 
-  <div id='product-modal' class='modal'>
-    <div class='modal-content'>
-      <span class='close' aria-label='Close'>&times;</span>
-      <img id='modal-img' src='' alt=''>
-      <h3 id='modal-name'></h3>
-      <p id='modal-desc'></p>
-      <p id='modal-price'></p>
-      <button id='modal-add' class='btn' data-key='addToCart'>Add to Cart</button>
+<!-- MODAL -->
+<div class="product-modal" id="productModal">
+    <div class="modal-box">
+        <span class="close-modal">&times;</span>
+        <img id="modalImg">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <strong id="modalPrice"></strong>
     </div>
-  </div>
+</div>
 
-  <footer>
-    <p data-key='footer'>© 2025 Asayra Aluminum Trading. All rights reserved.</p>
-  </footer>
-  <script src='js/app.js'></script>
-  <script src='js/cart.js'></script>
+<script>
+    document.querySelectorAll(".details-btn").forEach(btn=>{
+        btn.onclick=()=>{
+            const card=btn.closest(".product-card");
+            modalImg.src=card.dataset.img;
+            modalTitle.innerText=card.dataset.name;
+            modalDesc.innerText=card.dataset.desc;
+            modalPrice.innerText=card.dataset.price;
+            productModal.style.display="flex";
+        }
+    });
+
+    document.querySelector(".close-modal").onclick=()=>{
+        productModal.style.display="none";
+    };
+</script>
+
 </body>
 </html>
+
+
